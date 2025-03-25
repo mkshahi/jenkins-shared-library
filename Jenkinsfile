@@ -1,5 +1,6 @@
-pipeline {
     @Library('test_library')
+
+pipeline {
     agent any
     parameters{
                 string(name: 'ENV', defaultValue: 'dev', description: 'Target Environment')
