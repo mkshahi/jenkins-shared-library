@@ -13,7 +13,7 @@ pipeline {
         stage('Hello') {
             steps {
                 script{
-                lib.module1.hello()
+                lib_module1.hello()
                 if (params.ENV=="dev"){
                 echo 'Hello World'
                 }
