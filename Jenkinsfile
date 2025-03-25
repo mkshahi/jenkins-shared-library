@@ -1,5 +1,5 @@
 pipeline {
-    @library('test_library')
+    @Library('test_library')
     agent any
     parameters{
                 string(name: 'ENV', defaultValue: 'dev', description: 'Target Environment')
